@@ -4,7 +4,7 @@ import time
 from tqdm import tqdm
 
 # Configure the GenerativeAI API
-genai.configure(api_key="AIzaSyAmhXWrR1ccvobYV1RXEeRyMdpYEdi10Pg")
+genai.configure(api_key="Enter_your_api_key")
 
 # Set up the model
 generation_config = {
