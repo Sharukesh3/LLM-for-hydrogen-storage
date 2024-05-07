@@ -1,0 +1,81 @@
+{% extends 'base.html'%}
+{% block content %}
+<html data-bs-theme="dark">
+  <head>
+    <title>Text Summarizer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0px;
+      }
+      form {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+      }
+      input[type="radio"],
+      input[type="range"] {
+        margin-right: 10px;
+      }
+      .textarea-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      textarea {
+        width: 49%;
+        height: 300px;
+        padding: 10px;
+        box-sizing: border-box;
+        color: white;
+        background-color: white;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="file"] {
+        display: none;
+      }
+      label[for="upload-doc"] {
+        background-color: transparent;
+        color: #4caf50;
+        padding: 10px 20px;
+        border: 2px solid #4caf50;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .button-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Text Summarizer</h1>
+    <form method="post">
+      <div class="textarea-container">
+        <textarea placeholder="Enter or paste your text and press 'Summarize'."></textarea>
+        <textarea placeholder="Summarized output"></textarea>
+      </div>
+      <div class="button-container">
+        <input type="file" id="upload-doc" name="upload-doc" />
+        <label for="upload-doc">Upload Doc</label>
+        <button type="submit">Summarize</button>
+      </div>
+    </form>
+  </body>
+</html>
+{% endblock %}
