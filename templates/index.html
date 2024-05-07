@@ -1,10 +1,94 @@
 {% extends 'base.html'%}
 {% block content %}
-<head>
-<title>hi</title>
-</head>
-<center>
-<h1>Hello world!!</h1>
-<p>Akshay sir thought me how to do this webpage</p>
-</center>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Summarizer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      input[type="radio"],
+      input[type="range"] {
+        margin-right: 10px;
+      }
+
+      textarea {
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="file"] {
+        display: none;
+      }
+
+      label[for="upload-doc"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Text Summarizer</h1>
+    <form method="post">
+      <div>
+        <label>Modes:</label>
+        <input type="radio" name="mode" value="paragraph" checked> Paragraph
+        <input type="radio" name="mode" value="bullet"> Bullet Points
+        <input type="radio" name="mode" value="custom"> Custom
+      </div>
+      <div>
+        <label for="summary-length">Summary Length:</label>
+        <input type="range" id="summary-length" name="summary-length" min="0" max="100" value="50">
+      </div>
+      <textarea placeholder="Enter or paste your text and press 'Summarize'."></textarea>
+      <div>
+        <input type="file" id="upload-doc" name="upload-doc">
+        <label for="upload-doc">Upload Doc</label>
+      </div>
+      <div class="button-container">
+        <button type="submit">Summarize</button>
+      </div>
+    </form>
+  </body>
+</html>
 {%endblock%}
