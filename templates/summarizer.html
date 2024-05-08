@@ -36,24 +36,19 @@
         color: white;
         background-color: white;
       }
-      button {
-        padding: 10px 20px;
-        background-color: #4caf50;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
       input[type="file"] {
         display: none;
       }
       label[for="upload-doc"] {
         background-color: transparent;
-        color: #4caf50;
-        padding: 10px 20px;
-        border: 2px solid #4caf50;
+        color: #000000;
+        padding: 5px 20px;
+        border: 2px solid #8A2BE2;
         border-radius: 4px;
         cursor: pointer;
+      }
+      label[for="upload-doc"]:hover {
+        background-color:  #A74AC7;
       }
       .button-container {
         display: flex;
@@ -73,7 +68,7 @@
       <div class="button-container">
         <input type="file" id="upload-doc" name="upload-doc" />
         <label for="upload-doc">Upload Doc</label>
-        <button type="submit">Summarize</button>
+        <button type="button" class="btn btn-success">Summarize</button>
       </div>
     </form>
   </body>
