@@ -33,8 +33,19 @@
         height: 300px;
         padding: 10px;
         box-sizing: border-box;
-        color: white;
+        color: Black;
         background-color: white;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #8a2be2;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #A74AC7;
       }
       input[type="file"] {
         display: none;
@@ -43,12 +54,12 @@
         background-color: transparent;
         color: #000000;
         padding: 5px 20px;
-        border: 2px solid #8A2BE2;
+        border: 2px solid #8a2be2;
         border-radius: 4px;
         cursor: pointer;
       }
       label[for="upload-doc"]:hover {
-        background-color:  #A74AC7;
+        background-color: #a74ac7;
       }
       .button-container {
         display: flex;
@@ -62,13 +73,16 @@
     <h1>Text Summarizer</h1>
     <form method="post">
       <div class="textarea-container">
-        <textarea placeholder="Enter or paste your text and press 'Summarize'."></textarea>
-        <textarea placeholder="Summarized output"></textarea>
+        <textarea
+          name="input_textarea"
+          placeholder="Enter or paste your text and press 'Summarize'."
+        ></textarea>
+        <textarea placeholder="Summary will be displayed here..." readonly>{{ result }}</textarea>
       </div>
       <div class="button-container">
         <input type="file" id="upload-doc" name="upload-doc" />
         <label for="upload-doc">Upload Doc</label>
-        <button type="button" class="btn btn-success">Summarize</button>
+        <button type="submit">Summarize</button>
       </div>
     </form>
   </body>
