@@ -26,4 +26,18 @@ Your feedback is valuable for improving the summarization process.
 Disclaimer:
 Summaries are based on automated processing and may not capture all details. Reviewing full papers is recommended for comprehensive understanding.
 
+Usage instruction:
+1.clone the repository:
+git clone https://github.com/Sharukesh3/LLM-for-hydrogen-storage
+2.Install the requirements:
+pip install -r requirements.txt
+3.Run app.py:
+python app.py
+This will download the model (One time download)
+4.open your web browser and past the following link:
+http://127.0.0.1:5000
+
+system requirments:
+Your basic os requirments + 4GB of ram (for the model running)
+
 Thank you for using the Hydrogen Storage Papers Summarizer project!
