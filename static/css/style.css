@@ -4,6 +4,27 @@ h1
     font-size: 50px;
     text-align: center;
 }
+.uploaded-files {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+  }
+  
+  .uploaded-files h3 {
+    color: darkblue;
+    margin-top: 0;
+  }
+  
+  .uploaded-files ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .uploaded-files li {
+    color: black;
+    padding: 5px 0;
+  }
 body
 {
     background: #f4f4f4;

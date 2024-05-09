@@ -67,17 +67,22 @@
         align-items: center;
         margin-top: 10px;
       }
+      uploaded-files{
+
+      }
     </style>
   </head>
   <body>
     <h1>Text Summarizer</h1>
-    <form method="post">
+    <form method="post" enctype="multipart/form-data">
       <div class="textarea-container">
         <textarea
           name="input_textarea"
           placeholder="Enter or paste your text and press 'Summarize'."
         ></textarea>
-        <textarea placeholder="Summary will be displayed here..." readonly>{{ result }}</textarea>
+        <textarea placeholder="Summary will be displayed here..." readonly>
+{{ result }}</textarea
+        >
       </div>
       <div class="button-container">
         <input type="file" id="upload-doc" name="upload-doc" accept=".pdf" />
@@ -85,6 +90,16 @@
         <button type="submit">Summarize</button>
       </div>
     </form>
+    {% if uploaded_files %}
+    <div class="uploaded-files">
+      <h3>Uploaded Files:</h3>
+      <ul>
+        {% for file in uploaded_files %}
+        <li>{{ file }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
   </body>
 </html>
 {% endblock %}
