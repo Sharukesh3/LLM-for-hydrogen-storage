@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 import os
 from werkzeug.utils import secure_filename
 import Model as mld
@@ -13,7 +13,7 @@ Uploaded_pdf_path = "C:\\familyfolders\\profolders\\Collage stuff\\Sem 2 project
 def index():
     return render_template('index.html')
 
-@app.route('/summarizer' ,methods = ['GET','POST'])
+@app.route('/summarizer', methods=['GET', 'POST'])
 def summarizer():
     result = None
     uploaded_pdf = None
@@ -37,9 +37,31 @@ def summarizer():
 
     return render_template('summarizer.html', result=result, uploaded_files=uploaded_files)
 
-@app.route('/q_and_a_bot')
+@app.route('/q_and_a_bot', methods=['GET', 'POST'])
 def qa():
+    if request.method == 'POST':
+        pdf_file = request.files.get('upload-doc')
+        if pdf_file:
+            pdf_filename = secure_filename(pdf_file.filename)
+            pdf_file.save(os.path.join(app.config['UPLOAD_FOLDER'], pdf_filename))
+            # Add any additional processing for the uploaded PDF here
+
     return render_template('qa.html')
+
+# Endpoint to start a new chat session
+@app.route('/new_session')
+def new_session():
+    session_id = str(uuid4())  # Generate a unique session ID
+    return jsonify({"session_id": session_id})
+
+# Endpoint to handle user messages and generate bot responses
+@app.route('/chat/<session_id>', methods=['POST'])
+def chat(session_id):
+    data = request.get_json()
+    message = data.get('message', '')
+    # Process the user message and generate a bot response
+    response = "Bot response: Thanks for your message!"
+    return jsonify({"response": response})
 
 if __name__ == '__main__':
     # Create the upload directory if it doesn't exist
