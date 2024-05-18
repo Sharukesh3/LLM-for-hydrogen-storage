@@ -4,7 +4,7 @@ import time
 from tqdm import tqdm
 
 # Configure the GenerativeAI API
-genai.configure(api_key="AIzaSyAmhXWrR1ccvobYV1RXEeRyMdpYEdi10Pg")
+genai.configure(api_key="AIzaSyBH1LMw7bA4lsEYxfpahduzLhaPRb4CEJI")
 
 # Set up the model
 generation_config = {
@@ -52,15 +52,15 @@ def extract_second_column(input_file, start_row):
     return second_column_entries
 
 # Process CSV file and extract second column entries starting from the 67th row
-input_file = r'csv\Dataset_QA.csv'  # Using raw string to handle backslashes
-start_row = 60+58+64+20+60+12+62+19+60+63+6+65+72+63+53+18+24+18+70+72+79
+input_file = r'csv\Dataset_OnlyQ.csv'  # Using raw string to handle backslashes
+start_row = 78+81+97+74+46
 second_column_entries = extract_second_column(input_file, start_row)
 
 # Start chat with the model using the second column entries
 with tqdm(total=len(second_column_entries)) as pbar:
     for entry in second_column_entries:
         # Start a chat with the model using the current entry from the second column
-        gendral = "Seperate the questions with commas"
+        gendral = "Answer the following questions:"
         entry = gendral + entry
         convo.send_message(entry)
 
@@ -72,7 +72,7 @@ with tqdm(total=len(second_column_entries)) as pbar:
             print(f"Input: {entry}, No response from the model.")
 
         # Write input and output to a new CSV file
-        with open('csv\output_QA.csv', 'a', newline='', encoding='utf-8') as output_csv:
+        with open('csv\output_OnlyA.csv', 'a', newline='', encoding='utf-8') as output_csv:
             writer = csv.writer(output_csv)
             writer.writerow([entry, response])
 
