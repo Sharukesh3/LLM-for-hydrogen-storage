@@ -2,6 +2,8 @@ from flask import Flask, render_template, request, jsonify
 import os
 from werkzeug.utils import secure_filename
 import Model as mld
+from uuid import uuid4
+import Model_QA as mldq
 
 app = Flask(__name__)
 
@@ -60,7 +62,7 @@ def chat(session_id):
     data = request.get_json()
     message = data.get('message', '')
     # Process the user message and generate a bot response
-    response = "Bot response: Thanks for your message!"
+    response = mldq.answer(message)
     return jsonify({"response": response})
 
 if __name__ == '__main__':
