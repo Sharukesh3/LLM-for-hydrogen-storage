@@ -41,6 +41,6 @@ This will download the model (One time download)
 http://127.0.0.1:5000
 
 **System requirments:**
-Your basic os requirments + 4GB of ram (for the model running)
+Your basic os requirments + 7GB of ram (for the model loading/running)
 
 Thank you for using the Hydrogen Storage Papers Summarizer project!
