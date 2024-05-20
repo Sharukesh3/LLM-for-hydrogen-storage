@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1a1a1d;
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #2b2b2f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #1a1a1d;
+    color: #fff;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0093d0;
+    color: #fff;
+    font-size: 18px;
+}
+.header button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0093d0;
+    color: #fff;
+    cursor: pointer;
+}
+.header button:hover {
+    background-color: #003366;
+}
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #708090;
+}
+.message {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+.message.user {
+    justify-content: flex-end;
+}
+.message.bot {
+    justify-content: flex-start;
+}
+.message-text {
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 75%;
+    color: white;
+}
+.message.user .message-text {
+    background-color: #32cd32;
+    color: #000;
+    border-bottom-right-radius: 0;
+}
+.message.bot .message-text {
+    background-color: #008080;
+    color: #000;
+    border-bottom-left-radius: 0;
+}
+.input-box {
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    background-color: #1a1a1d;
+    border-radius: 0 0 10px 10px;
+}
+.input-box input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: #252529;
+    color: #fff;
+}
+.input-box button {
+    padding: 0 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a1a1d;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-box button svg {
+    fill: white;
+    width: 20px;
+    height: 20px;
+}
+.input-box label {
+    cursor: pointer;
+    margin-right: 10px;
+}
+.input-box input[type="file"] {
+    display: none;
+}
