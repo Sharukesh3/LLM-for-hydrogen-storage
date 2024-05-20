@@ -67,7 +67,7 @@ For any inquiries, please contact us at:
 
 - [sharukesh@gmail.com](mailto:sharukesh@gmail.com)
 - [shayanathif1@gmail.com](mailto:shayanathif1@gmail.com)
-
+- [rdeva6046@gmail.com](mailto:rdeva6046@gmail.com)
 
 ---
 
