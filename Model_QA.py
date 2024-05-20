@@ -6,7 +6,7 @@ from transformers import BartTokenizer, BartForConditionalGeneration
 def answer(query):
     context = query_pinecone(query, top_k=10)
     query = format_query(query, context["matches"])
-    answer=generate_answer(query1)
+    answer=generate_answer(query)
     return answer
     
 
@@ -53,8 +53,3 @@ retriever
 # load bart tokenizer and model from huggingface
 tokenizer = BartTokenizer.from_pretrained('vblagoje/bart_lfqa')
 generator = BartForConditionalGeneration.from_pretrained('vblagoje/bart_lfqa').to(device)
-
-query1 = "what are the different methods of hydrogen storage?"
-context = query_pinecone(query1, top_k=10)
-query1 = format_query(query1, context["matches"])
-generate_answer(query1)

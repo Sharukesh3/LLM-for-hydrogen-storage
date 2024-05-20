@@ -1,18 +1,18 @@
 h1
 {
-    color: darkblue;
+    color: #7ac142;
     font-size: 50px;
     text-align: center;
 }
 .uploaded-files {
     margin-top: 20px;
     padding: 10px;
-    background-color: #f4f4f4;
+    background-color: #2b2b2f;
     border-radius: 5px;
   }
   
   .uploaded-files h3 {
-    color: darkblue;
+    color: #7ac142;
     margin-top: 0;
   }
   
@@ -22,7 +22,7 @@ h1
   }
   
   .uploaded-files li {
-    color: black;
+    color: white;
     padding: 5px 0;
   }
 body

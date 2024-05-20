@@ -2,11 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0px;
+    background-color: #2b2b2f;
   }
   form {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #f4f4f4;
+    background-color: #2b2b2f;
     padding: 20px;
     border-radius: 5px;
     display: flex;
@@ -27,33 +28,33 @@ body {
     height: 300px;
     padding: 10px;
     box-sizing: border-box;
-    color: Black;
-    background-color: white;
+    color: white;
+    background-color: #2b2b2f;
   }
   button {
     padding: 10px 20px;
-    background-color: #8a2be2;
+    background-color: #0093d0;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
   button:hover {
-    background-color: #A74AC7;
+    background-color: #003366;
   }
   input[type="file"] {
     display: none;
   }
   label[for="upload-doc"] {
     background-color: transparent;
-    color: #000000;
+    color: white;
     padding: 5px 20px;
-    border: 2px solid #8a2be2;
+    border: 2px solid #0093d0;
     border-radius: 4px;
     cursor: pointer;
   }
   label[for="upload-doc"]:hover {
-    background-color: #a74ac7;
+    background-color: #003366;
   }
   .button-container {
     display: flex;
@@ -62,5 +63,6 @@ body {
     margin-top: 10px;
   }
   uploaded-files{
-
+    background-color: #2b2b2f;
+    color: white;
   }
