@@ -32,6 +32,19 @@ Welcome to the LARGE LANGUAGE MODEL FOR HYDROGEN STORAGE project! This tool is d
     ```
     http://127.0.0.1:5000
     ```
+5. **Application Screenshots:**
+
+    - **Home Page Overview:**
+    
+      -
+
+    - **Summarizer Tool:**
+    
+      -
+
+    - **Question-Answering Bot:**
+    
+      -
 
 ## System Requirements
 - Basic operating system requirements
