@@ -41,11 +41,13 @@ Welcome to the LARGE LANGUAGE MODEL FOR HYDROGEN STORAGE project! This tool is d
 
     - **Summarizer Tool:**
     
-      -
+      - ![WhatsApp Image 2024-05-20 at 17 41 03_9a5cace9](https://github.com/Sharukesh3/LLM-for-hydrogen-storage/assets/153832931/98ce4281-af8d-4c39-adc9-bee84108d312)
+
 
     - **Question-Answering Bot:**
     
-      -
+      - ![WhatsApp Image 2024-05-20 at 17 41 03_4e40b017](https://github.com/Sharukesh3/LLM-for-hydrogen-storage/assets/153832931/d2f92d57-ef20-4224-a96b-05e121e059b7)
+
 
 ## System Requirements
 - Basic operating system requirements
