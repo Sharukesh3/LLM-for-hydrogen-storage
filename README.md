@@ -69,7 +69,7 @@ Thank you for using the LARGE LANGUAGE MODEL FOR HYDROGEN STORAGE project! We ho
 For any inquiries, please contact us at:
 
 - [sharukesh@gmail.com](mailto:sharukesh@gmail.com)
-- [shayanathif1@gmail.com](mailto:shayanathif1@gmail.com)
+- [shayanathif13@gmail.com](mailto:shayanathif13@gmail.com)
 - [rdeva6046@gmail.com](mailto:rdeva6046@gmail.com)
 
 ---
