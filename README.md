@@ -10,6 +10,14 @@ Welcome to the LARGE LANGUAGE MODEL FOR HYDROGEN STORAGE project! This tool is d
 - **Multi-Document Summarization**: Summarizes multiple research papers simultaneously for comprehensive information.
 - **Question-Answering**: Provides answers to user queries based on the content of the research papers.
 
+## Soft Requirements
+1. **Google Gemini API Key**
+    Get your own key at [https://aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)
+    and paste it in dataset_prep/gemini.py
+2. **Pinecone API Key**
+    Sign up at [pinecone.io](https://pinecone.io) if you havent already, then go to [app.pinecone.io](app.pinecone.io) and get your key
+    and paste it in Model_QA.py
+
 ## Usage
 1. **Clone the Repository:**
     ```bash
@@ -71,6 +79,7 @@ For any inquiries, please contact us at:
 - [sharukesh@gmail.com](mailto:sharukesh@gmail.com)
 - [shayanathif13@gmail.com](mailto:shayanathif13@gmail.com)
 - [rdeva6046@gmail.com](mailto:rdeva6046@gmail.com)
+- [p8001479@gmail.com](mailto:p8001479@gmail.com)
 
 ---
 

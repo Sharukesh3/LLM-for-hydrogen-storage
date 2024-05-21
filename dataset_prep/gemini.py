@@ -3,10 +3,12 @@ import google.generativeai as genai
 import time
 from tqdm import tqdm
 
-# Configure the GenerativeAI API
-genai.configure(api_key="AIzaSyBH1LMw7bA4lsEYxfpahduzLhaPRb4CEJI")
 
-# Set up the model
+api_key='<Paste Gemini API Key here>'
+
+genai.configure(api_key=api_key)
+
+
 generation_config = {
   "temperature": 0.9,
   "top_p": 1,
@@ -40,7 +42,7 @@ model = genai.GenerativeModel(model_name="gemini-1.0-pro",
 convo = model.start_chat(history=[
 ])
 
-# Function to read CSV file, extract the second column starting from a specific row, and return its entries
+
 def extract_second_column(input_file, start_row):
     second_column_entries = []
     with open(input_file, 'r', newline='', encoding='utf-8') as csv_input:
@@ -51,12 +53,12 @@ def extract_second_column(input_file, start_row):
                     second_column_entries.append(row[1])  # Assuming the second column is at index 1
     return second_column_entries
 
-# Process CSV file and extract second column entries starting from the 67th row
+
 input_file = r'csv\Dataset_OnlyQ.csv'  # Using raw string to handle backslashes
 start_row = 78+81+97+74+46
 second_column_entries = extract_second_column(input_file, start_row)
 
-# Start chat with the model using the second column entries
+
 with tqdm(total=len(second_column_entries)) as pbar:
     for entry in second_column_entries:
         # Start a chat with the model using the current entry from the second column
