@@ -36,7 +36,8 @@ Welcome to the LARGE LANGUAGE MODEL FOR HYDROGEN STORAGE project! This tool is d
 
     - **Home Page Overview:**
     
-      -
+      - ![WhatsApp Image 2024-05-20 at 17 41 04_7ea27fe9](https://github.com/Sharukesh3/LLM-for-hydrogen-storage/assets/153832931/b3b14888-5d73-44e5-94a4-ea5b4e78ddb7)
+
 
     - **Summarizer Tool:**
     
