@@ -1,4 +1,6 @@
 # LARGE LANGUAGE MODEL FOR HYDROGEN STORAGE
+![logo](https://github.com/Sharukesh3/LLM-for-hydrogen-storage/assets/161855868/5786c22b-0046-486b-82dc-a99a0149a654)
+
 
 ## Overview
 Welcome to the LARGE LANGUAGE MODEL FOR HYDROGEN STORAGE project! This tool is designed to perform text summarization and question-answering specifically for research papers related to hydrogen storage. By extracting key insights and findings, it helps users quickly comprehend scientific literature in this field.
